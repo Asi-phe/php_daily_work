@@ -9,7 +9,7 @@ select number,select color,select images.
  <form action="index.php" method="POST">
  Select your number:<input type="number" name="number"><br><br><br>
  Select your favorite color: <input type="color" name="favcolor" value="#ff0000"><br><br><br>
- <input type="radio"name="images" >Cars<br>
+ //<input type="radio"name="images" >Cars<br>
  <input type="radio"name="images" >balloon<br>
  <input type="radio"name="images" >cat<br><br><br>
  <input type="submit"name="btn"><br>
@@ -19,16 +19,12 @@ select number,select color,select images.
 
 //if the user select a random color let it be the body background of the page.
 <?php
- $_backcolor= $_POST['favcolor'];
+ //$_backcolor= $_POST['favcolor'];*/
  //the user submit a form and user pressed color,then collect a background image.
- if ($_POST['favcolor']) && ($_POST['btn']);
+ //if ($_POST['favcolor']) && ($_POST['btn']);
 
 
- <style>
-  echo body{
-      background-color:$_POST['favcolor'];
-  }
- </style>
+
  ?>
 
 
